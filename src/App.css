@@ -19,6 +19,17 @@
   margin-right: 1.5em;
 }
 
+.mlflowFont {
+  font-family: 'Reem Kufi', sans-serif;
+  font-size: 2.5rem;
+  margin: 1.5rem 0;
+  font-weight: 100;
+  margin-left: 1.5em;
+  margin-right: 1.5em;
+  color: #1abc9c;
+}
+
+
 .intro {
   font-family: 'Reem Kufi', sans-serif;
   font-size: 2.75em;
@@ -389,6 +400,7 @@
   color: #fff;
 }
 
-.full-bg-image .icons-social a svg path {
+.full-bg-image .mlflowIcon {
   fill: #fff;
+  image-rendering: url("images/mlflowlogo.png");
 }

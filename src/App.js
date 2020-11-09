@@ -30,12 +30,29 @@ class App extends Component {
       devDesc:
         Configs.devDesc ||
         'Aute veniam ut deserunt cillum irure pariatur Lorem dolore anim nostrud quis veniam elit culpa.',
+      devDesc1: Configs.devDesc1,
       backgroundMode: 'default',
       backgroundIndex: 0,
       bgStyle: {},
       icons: Configs.icons || []
     };
   }
+
+  // parseAppsUrl(props){
+
+  //   var result = "";
+  //   var resultArr = props.split(' | ');
+  //   for (var i = 0; i < resultArr.length; i++) {
+  //     result = result + "<a href='#'>" + props[i] + "</a>";
+  //   }
+
+  //   return (
+  //     <div className="apps">
+  //       <Typist>{result}</Typist>
+  //     </div>
+  //   );
+  // }
+
 
   componentWillMount = () => {
     if (this.checkIfPlainTypeEnabled()) {
@@ -112,6 +129,7 @@ class App extends Component {
     }
   };
 
+
   getDefaultModeBasedOnBackgroundType = () => {
     if (this.checkIfNightModeEnabled()) {
       return this.state.lightBackgroundModes[0];
@@ -179,8 +197,15 @@ class App extends Component {
           <main className="App-main">
             <h1 className="intro">{ devIntro }</h1>
             <div className="tagline">
-              <Typist>{ devDesc }</Typist>
+              <p> <Typist>{ devDesc }</Typist></p>
+              <div>
+                  <a href="https://demeter.fit.fraunhofer.de/mlflow">
+                    <p className="mlflowIcon"></p>
+                    <p className="mlflowFont">MLFlow</p>
+                    </a>
+                </div>
             </div>
+
             <div className="icons-social">
               {icons.map(icon => (
                 <a
