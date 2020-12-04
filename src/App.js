@@ -199,7 +199,7 @@ class App extends Component {
             <div className="tagline">
               <p> <Typist>{ devDesc }</Typist></p>
               <div>
-                  <a href="https://demeter.fit.fraunhofer.de/mlflow">
+                  <a href="https://demeter.fit.fraunhofer.de/mlflow/">
                     <p className="mlflowIcon"></p>
                     <p className="mlflowFont">MLFlow</p>
                     </a>
